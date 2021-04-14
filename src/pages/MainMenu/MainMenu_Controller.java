@@ -79,8 +79,8 @@ public class MainMenu_Controller implements Initializable {
     }
 
     public void shapeFillImage(Shape shape, String pathImage) throws IOException{
-//        shape.setFill(new ImagePattern(new Image(new FileInputStream(""))));
-//        shape.setFill(new ImagePattern(new Image("")));
+//        shape.setFill(new ImagePattern(new Image(new FileInputStream(pathImage))));
+        shape.setFill(new ImagePattern(new Image(pathImage)));
     }
 
     public void fxmlLoadStage(MouseEvent event,String pathFXML) throws IOException {
