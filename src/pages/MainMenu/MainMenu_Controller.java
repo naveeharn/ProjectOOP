@@ -73,7 +73,7 @@ public class MainMenu_Controller implements Initializable {
 
         if (alert.showAndWait().get() == ButtonType.OK){
             stage = (Stage) sceneMainMenu.getScene().getWindow();
-//            System.out.println("successfully exit");
+            System.out.println("successfully exit");
             stage.close();
         }
     }
