@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.scene.paint.Color;
 
 
 public class Start_Controller implements Initializable {
@@ -113,4 +114,19 @@ public class Start_Controller implements Initializable {
         StackPaneMode.getChildren().remove(0);
 
     }
+    
+    @FXML
+    void onMouseEntered(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.YELLOW);
+        object.setStrokeWidth(4);
+    }
+
+    @FXML
+    void onMouseExited(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.BLACK);
+        object.setStrokeWidth(1);
+    }
+
 }

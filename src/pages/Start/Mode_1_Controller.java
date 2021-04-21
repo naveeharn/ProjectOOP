@@ -18,6 +18,10 @@ import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 public class Mode_1_Controller {
 
@@ -59,6 +63,21 @@ public class Mode_1_Controller {
         });
         timeline.play();
     }
+    
+    @FXML
+    void onMouseEntered(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.YELLOW);
+        object.setStrokeWidth(4);
+    }
+
+    @FXML
+    void onMouseExited(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.BLACK);
+        object.setStrokeWidth(1);
+    }
+
 
     @FXML
     void clickedToConfirm(MouseEvent event) throws IOException {

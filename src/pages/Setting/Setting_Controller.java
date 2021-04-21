@@ -10,6 +10,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.scene.paint.Color;
 
 public class Setting_Controller {
 
@@ -31,6 +32,20 @@ public class Setting_Controller {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+    }
+    
+    @FXML
+    void onMouseEntered(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.YELLOW);
+        object.setStrokeWidth(4);
+    }
+
+    @FXML
+    void onMouseExited(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.BLACK);
+        object.setStrokeWidth(1);
     }
 
 }

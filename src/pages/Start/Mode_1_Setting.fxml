@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Rectangle?>
@@ -8,8 +9,14 @@
     <children>
         <Pane fx:id="PaneMode_1_Setting" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: lightgrey; -fx-background-radius: 50; -fx-border-width: 4; -fx-border-radius: 50; -fx-border-color: black;">
             <children>
-                <Rectangle fx:id="BackButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="15.0" onMouseClicked="#clickedToBack" stroke="BLACK" strokeType="INSIDE" width="250.0" />
-            <Rectangle fx:id="StartGamePlayButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="590.0" onMouseClicked="#clickedToGamePlay" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+                <Rectangle fx:id="BackButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="15.0" onMouseClicked="#clickedToBack" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="StartGamePlayButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="590.0" onMouseClicked="#clickedToGamePlay" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
             </children>
         </Pane>
     </children>

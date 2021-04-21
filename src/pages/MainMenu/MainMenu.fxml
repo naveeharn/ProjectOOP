@@ -14,11 +14,11 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Rectangle>
-            <Rectangle fx:id="SettingButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="240.0" onMouseClicked="#clickedToSetting" stroke="BLACK" strokeType="INSIDE" width="250.0">
+            <Rectangle fx:id="SettingButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="240.0" onMouseClicked="#clickedToSetting" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Rectangle>
-            <Rectangle fx:id="ExitButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="660.0" onMouseClicked="#clickedToExit" stroke="BLACK" strokeType="INSIDE" width="250.0">
+            <Rectangle fx:id="ExitButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="660.0" onMouseClicked="#clickedToExit" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Rectangle>
@@ -34,10 +34,5 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label alignment="CENTER" layoutX="1034.0" layoutY="31.0" prefHeight="76.0" prefWidth="191.0" text="MainMenu">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

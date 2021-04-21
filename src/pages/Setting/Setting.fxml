@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
@@ -10,7 +11,10 @@
    <children>
       <AnchorPane prefHeight="800.0" prefWidth="365.0">
          <children>
-            <Rectangle fx:id="MainMenuButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="660.0" onMouseClicked="#clickedToMainMenu" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle fx:id="MainMenuButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="660.0" onMouseClicked="#clickedToMainMenu" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
             <Label layoutX="125.0" layoutY="609.0" text="MainMenu">
                <font>
                   <Font size="36.0" />
@@ -25,7 +29,7 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <StackPane fx:id="StackPaneSetting" layoutX="35.0" layoutY="80.0" prefHeight="660.0" prefWidth="800.0" style="-fx-background-color: lightsalmon; -fx-background-radius: 50; -fx-border-width: 4; -fx-border-color: black; -fx-border-radius: 50;" />
+            <Pane layoutX="35.0" layoutY="80.0" prefHeight="660.0" prefWidth="800.0" style="-fx-background-color: lightsalmon; -fx-background-radius: 50; -fx-border-width: 4; -fx-border-color: black; -fx-border-radius: 50;" />
          </children>
       </AnchorPane>
    </children>

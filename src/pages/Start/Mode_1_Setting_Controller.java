@@ -74,6 +74,21 @@ public class Mode_1_Setting_Controller implements Initializable {
     void clickedToGamePlay(MouseEvent event) {
 
     }
+    
+    @FXML
+    void onMouseEntered(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.YELLOW);
+        object.setStrokeWidth(4);
+    }
+
+    @FXML
+    void onMouseExited(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.BLACK);
+        object.setStrokeWidth(1);
+    }
+
 
 
 
