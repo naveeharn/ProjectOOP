@@ -2,7 +2,9 @@ package pages.MainMenu;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import pages.Start.*;
 
 import javafx.fxml.FXML;
@@ -45,6 +47,12 @@ public class MainMenu_Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 //        Image image = new Image("");
+        try {
+            shapeFillImage(StartButton,"assets/MainMenu/StartButton02.png");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @FXML
@@ -76,6 +84,20 @@ public class MainMenu_Controller implements Initializable {
             System.out.println("successfully exit");
             stage.close();
         }
+    }
+
+    @FXML
+    void onMouseEntered(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.YELLOW);
+        object.setStrokeWidth(4);
+    }
+
+    @FXML
+    void onMouseExited(MouseEvent event) {
+        Rectangle object = (Rectangle) event.getSource();
+        object.setStroke(Color.BLACK);
+        object.setStrokeWidth(1);
     }
 
     public void shapeFillImage(Shape shape, String pathImage) throws IOException{

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.Start.Mode_1_Controller">
+   <children>
+      <Pane fx:id="PaneMode_1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: lightyellow; -fx-background-radius: 50; -fx-border-width: 4; -fx-border-radius: 50; -fx-border-color: black;">
+         <children>
+            <Rectangle fx:id="HowToPlayButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="15.0" onMouseClicked="#clickedToHowToPlay" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle fx:id="ConfirmButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="590.0" onMouseClicked="#clickedToConfirm" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
