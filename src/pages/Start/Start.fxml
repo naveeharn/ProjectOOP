@@ -38,7 +38,7 @@
                </children>
             </StackPane>
             <Rectangle fx:id="textContainer" arcHeight="63.0" arcWidth="63.0" fill="#ffd362" height="63.0" layoutX="35.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="800.0" />
-            <Label fx:id="statusMode" alignment="CENTER" layoutX="71.0" prefHeight="76.0" prefWidth="736.0" style="-fx-font-family: ThaiSans Neue;" text="Please choose Gamemode รีบๆเลือกดิ้">
+            <Label fx:id="statusMode" alignment="CENTER" layoutX="71.0" prefHeight="76.0" prefWidth="736.0" text="Please choose Gamemode">
                <font>
                   <Font size="36.0" />
                </font>
